@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+           "name": "调试 Node.js 程序 - args",
+           "type": "node",
+           "request": "launch", // 有launch 和 attach
+           "runtimeExecutable": "node", //  使用什么命令启动
+           "args": [  // 启动时的参数
+             "${workspaceFolder}/test/debug/test.js"
+          ]
+        },
+        // 两种不一样的方式
+        {
+           "name": "调试 Node.js 程序-第二种方式",
+           "type": "node",
+           "request": "launch",
+           "program": "${workspaceFolder}/test/debug/test.js"
+        } 
+    ]
+}
